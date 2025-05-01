@@ -43,9 +43,10 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zueai/frontend-review-mcp"
+		"url": "https://github.com/ZukAi-MCP/frontend-review-mcp"
 	},
 	"engines": {
 		"node": ">=18"
 	}
 }
+
