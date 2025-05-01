@@ -2,6 +2,10 @@
 
 An MCP server that performs a visual review of a UI edit request. Ask your agent to screenshot the page before and after the edit, and then call this tool to review the edit.
 
+<a href="https://glama.ai/mcp/servers/@ZukAi-MCP/frontend-review-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@ZukAi-MCP/frontend-review-mcp/badge" alt="Frontend Review MCP server" />
+</a>
+
 ## Usage
 
 ### Cursor
@@ -13,8 +17,7 @@ An MCP server that performs a visual review of a UI edit request. Ask your agent
 	"mcpServers": {
 		"frontend-review": {
 			"command": "npx",
-			"args": ["frontend-review-mcp HYPERBOLIC_API_KEY=<YOUR_API_KEY>"],
-
+			"args": ["frontend-review-mcp HYPERBOLIC_API_KEY=<YOUR_API_KEY>"]
 		}
 	}
 }
