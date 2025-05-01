@@ -128,3 +128,4 @@ async function callModel(model, beforeImage, afterImage, systemPrompt, editReque
     // )
     return data.choices[0].message.content;
 }
+
