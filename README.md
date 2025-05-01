@@ -74,8 +74,7 @@ It will try the specified model first, and then try the others if it fails.
 
 ## Taking Screenshots
 
-You can use any MCP server to take screenshots. I've been using [https://github.com/AgentDeskAI/browser-tools-mcp](https://github.com/AgentDeskAI/browser-tools-mcp) which has a `takeScreenshot` tool, among other useful tools for frontend development.
-
+You can use any MCP server to take screenshots. 
 ## AI Instructions
 
 You can include the following instructions in your AI's prompt to make it take screenshots and review the edit:
