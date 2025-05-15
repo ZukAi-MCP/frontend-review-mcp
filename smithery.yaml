@@ -1,0 +1,32 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - hyperbolicApiKey
+    properties:
+      hyperbolicApiKey:
+        type: string
+        description: Hyperbolic API key for the review model
+      model:
+        type: string
+        description: Optional initial model to try before fallbacks
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => {
+      const args = [`HYPERBOLIC_API_KEY=${config.hyperbolicApiKey}`];
+      if (config.model) {
+        args.push(`MODEL=${config.model}`);
+      }
+      return {
+        command: "frontend-review-mcp",
+        args
+      };
+    }
+  exampleConfig:
+    hyperbolicApiKey: YOUR_API_KEY_HERE
+    model: meta-llama/Llama-3.2-90B-Vision-Instruct

@@ -1,4 +1,5 @@
 # frontend-review-mcp
+[![smithery badge](https://smithery.ai/badge/@ZukAi-MCP/frontend-review-mcp)](https://smithery.ai/server/@ZukAi-MCP/frontend-review-mcp)
 
 An MCP server that performs a visual review of a UI edit request. Ask your agent to screenshot the page before and after the edit, and then call this tool to review the edit.
 
