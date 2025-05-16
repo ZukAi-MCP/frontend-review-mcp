@@ -1,52 +1,30 @@
 {
-	"name": "frontend-review-mcp",
-	"version": "0.1.5",
-	"description": "An MCP server that performs a visual review of UI edit requests",
-	"module": "index.ts",
-	"bin": {
-		"frontend-review-mcp": "./build/index.js"
-	},
-	"files": [
-		"build"
-	],
-	"scripts": {
-		"build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
-		"check": "bunx biome check --write .",
-		"start": "node build/index.js",
-		"bump": "npm version patch --no-git-tag-version",
-		"prepublishOnly": "bun check && npm run build && npm run bump",
-		"push": "npm run build && npm publish"
-	},
-	"type": "module",
-	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@types/bun": "latest",
-		"@types/node": "^22.13.5"
-	},
-	"peerDependencies": {
-		"typescript": "^5.7.3"
-	},
-	"dependencies": {
-		"@modelcontextprotocol/sdk": "^1.6.0",
-		"dotenv": "^16.4.7",
-		"sharp": "^0.33.5",
-		"zod": "^3.24.2"
-	},
-	"keywords": [
-		"mcp",
-		"frontend",
-		"review",
-		"screenshot",
-		"ui"
-	],
-	"author": "",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ZukAi-MCP/frontend-review-mcp"
-	},
-	"engines": {
-		"node": ">=18"
-	}
+    "name": "cs-wallet",
+    "version": "0.15.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "async": "^0.9.0",
+        "big.js": "^3.1.3",
+        "bigi": "^1.4.0",
+        "bip32-utils": "git://github.com/CoinSpace/bip32-utils.git#v0.11.3",
+        "bitcoinjs-lib": "git://github.com/smileycoin/bitcoinjs-lib.git",
+        "cs-insight": "https://github.com/smileycoin/cs-insight.git",
+        "hdkey": "^0.8.0",
+        "lodash": "^4.17.5",
+        "wif": "^2.0.1"
+    },
+    "devDependencies": {
+        "mocha": "^3.5.3",
+        "rewire": "^2.5.2",
+        "sinon": "^3.2.1"
+    },
+    "scripts": {
+        "test": "mocha test --reporter spec --timeout 600000"
+    },
+    "browserify": {
+        "transform": [
+            "envify"
+        ]
+    }
 }
-

@@ -1,0 +1,11 @@
+{
+  "externalAccount":"xprv9wgkWh3GXN9NsMux4k1Xuocj4HiFEnDQxwr98Gxp6Rdgunehir88G3SuVLE4Lbq688q52Xar9hfGzMatLEvUz3QsyeNkTVcdnMqyBKhEUvd",
+  "internalAccount":"xprv9wgkWh3GXN9NtnmjwHcmmtpDeUZqQAaQv9EL5YgicH9hXEFSCs6XJv57RZiUhqs28uSeq82ZLmaBDd8mJeZfTi4tM2Hbwr49TupneYdNdqA",
+  "addressIndex":1,
+  "changeAddressIndex":2,
+  "networkName":"bitcoin",
+  "balance": 52388527,
+  "unspents": [],
+  "historyTxs": [],
+  "minConf": 1
+}
